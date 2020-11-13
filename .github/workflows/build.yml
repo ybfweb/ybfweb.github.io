@@ -16,6 +16,8 @@ jobs:
     - name: Build the site in the jekyll/builder container
       run: |
         touch ybf.html
+        git config --global user.email "ybfweb@163.com"
+        git config --global user.name "ybfweb@163.com"
         git add -A
         git commit -m"add ybf.html"
         git push origin main
